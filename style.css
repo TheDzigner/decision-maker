@@ -1,0 +1,306 @@
+*
+
+{
+
+  margin: 0;
+
+  padding :0;
+
+  box-sizing: border-box;
+
+}
+
+button
+
+{
+
+  outline: none ;
+
+}
+
+body {
+
+    font-size: 15pt;
+
+    height :100vh;
+
+    width :min(100%,480px);
+
+    transition :all  .2s ease-in-out ;
+
+    font-family: 'Varela Round', sans-serif;
+
+    background:#252525 ;
+
+}
+
+header 
+
+{
+
+  position :fixed ;
+
+  width :min(100%,480px);
+
+  background:#252525 ;
+
+  box-shadow :0 0 7px rgba(3,3,3,.3);
+
+  top: 0;
+
+  z-index :10 ;
+
+  display :flex ;
+
+  justify-content :space-between;
+
+  align-items :center ;
+
+  padding :5px ;
+
+}
+
+header .name_wrapper
+
+{
+
+  padding :10px ;
+
+  color: #FFFFFF ;
+
+}
+
+.name_wrapper h1 
+
+{
+
+  font-size :1em ;
+
+  font-weight :700 ;
+
+}
+
+.name_wrapper span 
+
+{
+
+  font-size :.7em ;
+
+  font-weight :300 ;
+
+}
+
+header .shuffle_wrapper 
+
+{
+
+  padding :10px ;
+
+}
+
+header .shuffle_wrapper button 
+
+{
+
+  display: block ;
+
+  width :45px;
+
+  height :45px;
+
+  border :1px solid #F1F1F1 ;
+
+}
+
+.container
+
+{
+
+  width :min(100%,480px);
+
+  display :flex ;
+
+  justify-content :left;
+
+  align-items :center ;
+
+  flex-wrap :wrap ;
+
+  margin :30% auto 0 ;
+
+  position :relative ;
+
+  padding-bottom :135px ;
+
+}
+
+.container .card 
+
+{
+
+ width :48%;
+
+ height :auto ;
+
+ margin :3px 2px auto ;
+
+ display :flex ;
+
+ justify-content :center ;
+
+ align-items :center ;
+
+ flex-direction :column ;
+
+ border-radius :5px ;
+
+ background :#252525 ;
+
+ border :1px solid rgba(183, 185, 190, .2);
+
+ color: rgba(183, 185, 190, .2);
+
+ transition :box-shadow  .2s ease-in-out ;
+
+ 
+
+}
+
+.card.choosen
+
+{
+
+box-shadow :1px 1px 7px rgba(183, 185, 190,.3);
+
+transition:.2s ease-in-out;
+
+color :#FFFFFF;
+
+background :#00383E ;
+
+}
+
+.card p 
+
+{
+
+  padding :10px ;
+
+  margin :10px ;
+
+  word-break: break-all;
+
+}
+
+.card div 
+
+{
+
+  width :100%;
+
+  padding :10px ;
+
+  display :flex;
+
+  justify-content :space-between ;
+
+  align-items :center ;
+
+  
+
+}
+
+.card div button 
+
+{
+
+  width :30px;
+
+  height :30px;
+
+  border-radius :50%;
+
+  color :#FFFFFF ;
+
+  background :rgba(183, 185, 190,.5);
+
+ border :1px solid rgba(183, 185, 190, .2);
+
+}
+
+.card div .close 
+
+{
+
+  opacity: 0;
+
+}
+
+.InputChoiceWrapper 
+
+{
+
+  position: fixed;
+
+  bottom :0;
+
+ width :min(100%,480px);
+
+ z-index :10 ;
+
+ left:0;
+
+ display :flex ;
+
+ justify-content :center ;
+
+ align-items :center ;
+
+ padding :10px ;
+
+ background :#252525 ;
+
+}
+
+.InputChoiceWrapper textarea
+
+{
+
+  flex-grow: 1;
+
+  outline :none;
+
+  border :1px solid transparent ;
+
+  margin :5px ;
+
+  padding :10px 5px;
+
+ font-family: 'Varela Round', sans-serif;
+
+ font-size :1em ;
+
+ border-radius :5px ;
+
+ text-align :left ;
+
+}
+
+.InputChoiceWrapper button 
+
+{
+
+  display :inline-block ;
+
+  width :45px;
+
+  height :70px;
+
+  border-radius :5px ;
+
+  border :1px solid #F1F1F1 ;
+
+  outline :none ;
+
+}
+
